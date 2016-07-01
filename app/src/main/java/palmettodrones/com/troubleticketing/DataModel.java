@@ -16,7 +16,7 @@ public class DataModel {
     private ArrayList<ItemModel> itemsArray = new ArrayList<ItemModel>();
     private Context ctx;
 
-    // Initializer to read a text file into an array of golfcourse objects
+    // Initializer to read a text file into an array of item objects
     public DataModel(Context ctx, String itemsFilename) {
         String line;
         BufferedReader br;

@@ -1,5 +1,6 @@
 package palmettodrones.com.troubleticketing;
 
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import palmettodrones.com.troubleticketing.dummy.DummyContent;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -39,6 +41,13 @@ public class deviceListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Get devices from a file named courses.txt
+        DataModel dataModel = new DataModel(this, "items");
+        ArrayList<ItemModel> items = dataModel.getString();
+
+        FragmentManager fm = getFragmentManager();
+
         setContentView(R.layout.activity_device_list);
 
 
