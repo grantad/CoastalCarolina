@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".AFEActivity" />
-        <activity android:name=".AFEPackActivity" />
+        <activity android:name=".EFAActivity" />
+        <activity android:name=".EFAPackActivity" />
         <activity
             android:name=".deviceListActivity"
             android:label="@string/title_device_list"

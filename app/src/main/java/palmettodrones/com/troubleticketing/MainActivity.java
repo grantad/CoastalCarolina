@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
 
         if(item.equalsIgnoreCase("AFE")){
-            Intent afeIntent = new Intent(MainActivity.this, AFEActivity.class);
+            Intent afeIntent = new Intent(MainActivity.this, EFAActivity.class);
             afeIntent.putExtra("AFE", 1);
             MainActivity.this.startActivity(afeIntent);
         }
